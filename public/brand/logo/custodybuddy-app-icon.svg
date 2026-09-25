@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-labelledby="title desc">
+  <title id="title">CustodyBuddy app icon</title><desc id="desc">Interlocked CB monogram on deep navy.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07152B"/><stop offset="1" stop-color="#020716"/></linearGradient></defs>
+  <rect x="5" y="5" width="182" height="182" rx="38" fill="url(#bg)" stroke="#F6BA21" stroke-width="3"/>
+  <text x="24" y="128" fill="#F7F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="116">C</text>
+  <text x="77" y="143" fill="#F6BA21" font-family="Georgia, 'Times New Roman', serif" font-size="106">B</text>
+</svg>
