@@ -11,6 +11,7 @@ All notable changes to this asset library are documented here.
 
 ### Changed
 
+- Moved the showcase's unchanged inline global rules into `showcase/global.css` and linked the catalog to that stylesheet.
 - Reorganized the canonical asset manifest into core asset-type, supporting-asset, and internal-asset groups without moving files or changing asset records.
 - Refreshed the internal brand-kit overview to reflect the current logo and asset-library categories using the showcase card treatment.
 - Grouped approved visual source references in `public/brand/generated/references/`.

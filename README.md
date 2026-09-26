@@ -12,6 +12,7 @@ The manifest groups records by purpose: `coreAssetTypes` (logo, icon, pattern, i
 - `generated/references/` holds approved visual source references. Do not deploy these as library assets.
 - `generated/brand-kit/` holds internal orientation boards. They do not replace approved source assets.
 - `generated/marketing/` holds finished marketing exports. Its `import-record.json` preserves original-to-canonical filenames.
+- `showcase/global.css` holds the internal showcase's shared stylesheet; `showcase/index.html` loads it directly.
 
 Read [docs/brand-kit/README.md](docs/brand-kit/README.md) for source hierarchy and brand direction. The extracted editorial rules live in [docs/brand-kit/design-system.md](docs/brand-kit/design-system.md).
 
