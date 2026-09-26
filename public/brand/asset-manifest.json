@@ -1,6 +1,6 @@
 {
   "name": "CustodyBuddy Brand Asset Library",
-  "version": "1.2.0-phase-1",
+  "version": "1.3.0-phase-1",
   "referencePalette": {
     "deepNavy": "#020716",
     "richNavy": "#07152B",
@@ -541,6 +541,20 @@
       "altTextGuidance": "CustodyBuddy approved brand mood board",
       "status": "reused",
       "sourceNotes": "Existing approved project asset copied without modification"
+    },
+    {
+      "filename": "custodybuddy-brand-kit-overview-v1.png",
+      "path": "/brand/generated/brand-kit/custodybuddy-brand-kit-overview-v1.png",
+      "purpose": "Organized overview of the approved CustodyBuddy identity system",
+      "category": "generated-brand-kit",
+      "format": "PNG",
+      "transparency": false,
+      "recommendedUsage": "Internal brand alignment and contributor orientation only; never ship in product UI",
+      "recommendedDisplaySize": "Reference at native 1448x1086",
+      "decorative": false,
+      "altTextGuidance": "CustodyBuddy brand-kit overview showing logo, palette, typography, applications, illustration language, and UI elements",
+      "status": "new",
+      "sourceNotes": "Generated from the approved brand mood board and blog archive reference, informed by custodybuddy.com positioning; approved source assets remain authoritative"
     },
     {
       "filename": "case-files-office-illustration.webp",
