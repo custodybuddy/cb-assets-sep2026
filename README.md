@@ -6,12 +6,14 @@ This repository is the static, reusable CustodyBuddy visual asset library. It is
 
 `public/brand/asset-manifest.json` is the canonical asset inventory. `showcase/index.html` is the internal browser catalog for visual review.
 
+The manifest groups records by purpose: `coreAssetTypes` (logo, icon, pattern, illustration, and texture), `supportingAssets` (background and decorative), and `internalAssets` (references and generated material). The `icon` and `pattern` groups are intentionally empty until approved reusable assets exist.
+
 - `logo/`, `illustrations/`, `backgrounds/`, `decorative/`, and `textures/` hold reusable production assets.
 - `generated/references/` holds approved visual source references. Do not deploy these as library assets.
 - `generated/brand-kit/` holds internal orientation boards. They do not replace approved source assets.
 - `generated/marketing/` holds finished marketing exports. Its `import-record.json` preserves original-to-canonical filenames.
 
-Read [docs/brand-kit/README.md](docs/brand-kit/README.md) for source hierarchy and brand direction.
+Read [docs/brand-kit/README.md](docs/brand-kit/README.md) for source hierarchy and brand direction. The extracted editorial rules live in [docs/brand-kit/design-system.md](docs/brand-kit/design-system.md).
 
 ## Asset Changes
 

@@ -25,4 +25,6 @@ This directory explains how the repository’s visual materials fit together. Th
 
 See `generation-notes.md` for source references, prompt direction, and limitations.
 
+See [design-system.md](design-system.md) for the token, typography, layout, pattern, asset, and accessibility rules extracted from the static blog homepage template.
+
 Keep real interface copy, legal information, names, dates, and case details in accessible HTML rather than artwork. Never place private family or legal data in reusable assets or screenshots.
