@@ -23,4 +23,6 @@ This directory explains how the repository’s visual materials fit together. Th
 
 `public/brand/generated/brand-kit/custodybuddy-brand-kit-overview-v1.png` is an internal orientation board. It summarizes the existing identity; it does not replace approved source files or authorize a logo redesign.
 
+See `generation-notes.md` for source references, prompt direction, and limitations.
+
 Keep real interface copy, legal information, names, dates, and case details in accessible HTML rather than artwork. Never place private family or legal data in reusable assets or screenshots.

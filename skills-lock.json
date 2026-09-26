@@ -1,17 +1,115 @@
 {
   "version": 1,
   "skills": {
+    "accessibility-excellence": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/accessibility-excellence/SKILL.md",
+      "computedHash": "529e542d76a959471a547b87e5d30cf911b9dcf93315482357c0b0fd7cf08a63"
+    },
+    "brand-asset": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/creative/brand-asset/SKILL.md",
+      "computedHash": "0fc3e67bfddd4db43e980c3d80226090f0af6bac36207ea30ad0935386da50de"
+    },
     "brandkit": {
       "source": "leonxlnx/taste-skill",
       "sourceType": "github",
       "skillPath": "skills/brandkit/SKILL.md",
       "computedHash": "b63012f3c3d21197e0185d3e9cc7ec40c589fb10e0b5a32a561739de31aa3f20"
     },
+    "color-system": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/color-system/SKILL.md",
+      "computedHash": "d91e06496b5b9215a7253758ca95da3eb150b9e2a7e6749e465bd16e83d0db3d"
+    },
+    "component-architecture": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/component-architecture/SKILL.md",
+      "computedHash": "f23149426d347c0b4f3904083a5dd27dd3add39264714fa60cc8c04ee457250b"
+    },
+    "design-engineer-mindset": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/design-engineer-mindset/SKILL.md",
+      "computedHash": "43cf79dd1c8d1687ccbdf050a1817772fc8890476030fa541be87c3e772816cf"
+    },
+    "design-foundation": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/design-foundation/SKILL.md",
+      "computedHash": "c295d1a6491adf2212352a4de4e0e73090c5e2e65178cae68ed25e3ef3b2bbb7"
+    },
+    "error-handling-recovery": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/error-handling-recovery/SKILL.md",
+      "computedHash": "50a3743267b2fda8a1b77b4b95e00ff58765fdb7304f987099b87505281090d4"
+    },
+    "frontend-orchestrator": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/frontend-orchestrator/SKILL.md",
+      "computedHash": "e92948cf936dd8e2b276fa02e2e8bd2c00facae778c3805ce550edee99b21853"
+    },
+    "interaction-physics": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/interaction-physics/SKILL.md",
+      "computedHash": "a9fa7140cd30a7add30e31ffaf681b610e1568dfdc687cda0440d46d2c83bceb"
+    },
+    "layout-system": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/layout-system/SKILL.md",
+      "computedHash": "7675befb65199e2009eb2ac882ad3f0614cc50dc8b3752dafcdea975ed83ab13"
+    },
+    "loading-states": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/loading-states/SKILL.md",
+      "computedHash": "f976b175a922977e666fe4d98bec5b27b80d6ef92f2857605f1bdfdcb302d679"
+    },
+    "performance-optimization": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/performance-optimization/SKILL.md",
+      "computedHash": "da22e9536ac979ea437c0ca2fca00efc986922fca72953a500e9a9f12426ef2e"
+    },
+    "typography-system": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/typography-system/SKILL.md",
+      "computedHash": "11b2b57fa799b136d1a6f42057a26f2baa5de7e42dfd36985f34be784c79d6ba"
+    },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
       "skillPath": "skills/react-best-practices/SKILL.md",
       "computedHash": "3219a1944e404ffc14d1d9d6aef6dd2e3855b81387ee0a044ccbfe14d34c2357"
+    },
+    "visual-hierarchy-refactoring": {
+      "source": "sanky369/vibe-building-skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/visual-hierarchy-refactoring/SKILL.md",
+      "computedHash": "2798f1f83571d428324c381e0e8b1052878f411c412b4638a2e3e39d56e77b32"
     }
   }
 }
