@@ -1,0 +1,30 @@
+{
+  "sourcePackage": "custodybuddy-new-assets-2026-09-20",
+  "importedOn": "2026-09-25",
+  "canonicalManifest": "/brand/asset-manifest.json",
+  "notes": [
+    "The original package contained opaque WebP exports only.",
+    "Assets were renamed and grouped by purpose without changing image content.",
+    "The canonical metadata is maintained in the brand asset manifest."
+  ],
+  "renamedAssets": {
+    "cb-illustration-case-files-office-portrait-v01.webp": "/brand/generated/marketing/illustrations/case-files-office-illustration.webp",
+    "cb-illustration-coparent-message-office-portrait-v01.webp": "/brand/generated/marketing/illustrations/co-parent-message-office-illustration.webp",
+    "cb-illustration-document-summary-office-portrait-v01.webp": "/brand/generated/marketing/illustrations/document-summary-office-illustration.webp",
+    "cb-illustration-evidence-files-office-portrait-v01.webp": "/brand/generated/marketing/illustrations/evidence-files-office-illustration.webp",
+    "cb-illustration-legal-safeguards-office-portrait-v01.webp": "/brand/generated/marketing/illustrations/legal-safeguards-office-illustration.webp",
+    "cb-illustration-parenting-agreement-office-portrait-v01.webp": "/brand/generated/marketing/illustrations/parenting-agreement-office-illustration.webp",
+    "cb-template-instagram-carousel-hook-portrait-v01.webp": "/brand/generated/marketing/social/instagram-carousel/instagram-carousel-01-hook-template.webp",
+    "cb-template-instagram-carousel-why-it-matters-portrait-v01.webp": "/brand/generated/marketing/social/instagram-carousel/instagram-carousel-02-why-it-matters-template.webp",
+    "cb-template-instagram-carousel-explain-portrait-v01.webp": "/brand/generated/marketing/social/instagram-carousel/instagram-carousel-03-explainer-template.webp",
+    "cb-template-instagram-carousel-steps-portrait-v01.webp": "/brand/generated/marketing/social/instagram-carousel/instagram-carousel-04-steps-template.webp",
+    "cb-template-instagram-carousel-takeaway-portrait-v01.webp": "/brand/generated/marketing/social/instagram-carousel/instagram-carousel-05-takeaway-template.webp",
+    "cb-template-instagram-carousel-cta-portrait-v01.webp": "/brand/generated/marketing/social/instagram-carousel/instagram-carousel-06-call-to-action-template.webp",
+    "cb-template-instagram-post-portrait-v01.webp": "/brand/generated/marketing/social/instagram-post/instagram-post-template.webp",
+    "cb-template-blog-featured-generic-landscape-v01.webp": "/brand/generated/marketing/blog/featured/blog-featured-generic-template.webp",
+    "cb-template-blog-featured-explainer-landscape-v01.webp": "/brand/generated/marketing/blog/featured/blog-featured-explainer-template.webp",
+    "cb-template-blog-featured-evidence-landscape-v01.webp": "/brand/generated/marketing/blog/featured/blog-featured-evidence-template.webp",
+    "cb-template-blog-featured-communication-landscape-v01.webp": "/brand/generated/marketing/blog/featured/blog-featured-communication-template.webp",
+    "cb-reference-social-legal-tech-office-portrait-v01.webp": "/brand/generated/marketing/references/social-legal-tech-style-reference.webp"
+  }
+}
