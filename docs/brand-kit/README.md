@@ -13,8 +13,8 @@ This directory explains how the repository’s visual materials fit together. Th
 ## Source Hierarchy
 
 1. `public/brand/asset-manifest.json` — authoritative asset inventory and usage guidance.
-2. `public/brand/generated/approved-brand-mood-board.png` — approved identity reference.
-3. `public/brand/generated/approved-blog-archive-dashboard.png` — approved editorial application reference.
+2. `public/brand/generated/references/approved-brand-mood-board.png` — approved identity reference.
+3. `public/brand/generated/references/approved-blog-archive-dashboard.png` — approved editorial application reference.
 4. `public/brand/logo/`, `illustrations/`, `backgrounds/`, `decorative/`, and `textures/` — reusable production-ready visual assets.
 5. `public/brand/generated/marketing/` — finished marketing exports and references; do not use as product UI backgrounds.
 6. `examples/` — static implementation studies, not production application code.

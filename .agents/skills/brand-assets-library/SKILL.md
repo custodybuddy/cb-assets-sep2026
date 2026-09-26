@@ -13,6 +13,16 @@ Do **not** build, redesign, or add application functionality during this phase.
 
 Use the attached approved CustodyBuddy reference images and mood board as the **visual source of truth**.
 
+## This Checkout's Catalog Contract
+
+This repository is a static asset library. Treat `public/brand/asset-manifest.json` as the canonical inventory and `showcase/index.html` as its one review consumer. `public/brand/generated/marketing/import-record.json` preserves original-to-canonical filenames for imported marketing exports.
+
+Before moving, renaming, adding, or removing an asset, inventory its references. For a core asset, update the manifest and the relevant showcase entry together. For generated marketing exports, preserve and update the import record as well. Keep approved reference images and finished marketing exports separate from modular production assets.
+
+Keep `README.md` current when the library's structure or contributor workflow changes. Record material asset, naming, and structural changes in `CHANGELOG.md`; do not use it as a per-file inventory.
+
+Validate the resulting catalog with the repository's built-in JSON/SVG checks and `git diff --check`. Do not add a manifest-to-showcase generator unless a second real consumer demonstrates leverage.
+
 ## Workflow
 
 ### 1. Analyze the approved references first

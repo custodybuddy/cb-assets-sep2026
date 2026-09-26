@@ -10,8 +10,8 @@
 ## Sources
 
 - `https://custodybuddy.com/` supplied product positioning and public vocabulary.
-- `public/brand/generated/approved-brand-mood-board.png` supplied the authoritative logo, palette, typography, materials, and illustration direction.
-- `public/brand/generated/approved-blog-archive-dashboard.png` supplied the approved editorial application language.
+- `public/brand/generated/references/approved-brand-mood-board.png` supplied the authoritative logo, palette, typography, materials, and illustration direction.
+- `public/brand/generated/references/approved-blog-archive-dashboard.png` supplied the approved editorial application language.
 
 ## Final Prompt Direction
 
