@@ -6,6 +6,7 @@ All notable changes to this asset library are documented here.
 
 ### Added
 
+- Extracted the animated desk hero v8 into `showcase/templates/custodybuddy-hero-v8/`.
 - Root contributor documentation and a changelog policy.
 - Brand-system reference extracted from the static blog homepage template.
 

@@ -1,0 +1,94 @@
+/* CustodyBuddy design tokens v0.3, aligned to the CustodyBuddy brand guide */
+:root {
+  /* Brand palette (guide names) */
+  --cb-midnight: #020716;   /* Midnight Navy: primary background */
+  --cb-deep: #07152B;       /* Deep Navy: secondary surface (sections, cards, inputs) */
+  --cb-haze: #12345B;       /* Blue Haze: atmospheric grid and glow only */
+  --cb-warm-white: #F7F3EA; /* Warm White: headlines */
+  --cb-soft-grey: #D6DCE8;  /* Soft Grey: body text */
+  --cb-gold: #F6BA21;       /* Celestial Gold: accent words, icons, borders, primary button (solid) */
+  --cb-cream: #F5ECDD;      /* Cream Paper: documents, paper cards, primary-button hover */
+
+  /* Legacy aliases used in index.html (map onto the palette) */
+  --cb-void: var(--cb-midnight);
+  --cb-navy: var(--cb-deep);
+  --cb-navy-raised: var(--cb-deep);
+  --cb-navy-accent: var(--cb-haze);
+  --cb-ivory: var(--cb-warm-white);
+  --cb-slate: var(--cb-soft-grey);
+  --cb-white: #FFFFFF;      /* logo "Custody" and ".com" (owner rule) */
+  --cb-on-gold: var(--cb-midnight);
+  --cb-danger: #FF8A90;
+
+  /* Borders: thin gold hairlines, never thicker than 1.5px, never glowing */
+  --cb-border: rgba(246, 186, 33, 0.70);
+  --cb-border-soft: rgba(246, 186, 33, 0.40);
+  --cb-border-faint: rgba(246, 186, 33, 0.22);
+  --cb-hairline: 1px solid var(--cb-border);
+  --cb-hairline-soft: 1px solid var(--cb-border-soft);
+
+  /* Background atmosphere: blue haze + faint tech grid (5%), no gold glow */
+  --cb-grid-line: rgba(214, 220, 232, 0.05);
+  --cb-grid-size: 64px;
+  --cb-bg:
+    radial-gradient(55% 45% at 78% 18%, rgba(18, 52, 91, 0.55), transparent 70%),
+    radial-gradient(45% 40% at 10% 90%, rgba(18, 52, 91, 0.30), transparent 70%),
+    linear-gradient(var(--cb-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cb-grid-line) 1px, transparent 1px),
+    var(--cb-midnight);
+
+  /* Type */
+  --cb-font-display: "Newsreader", "Lora", Georgia, "Times New Roman", serif;
+  --cb-font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --cb-text-xs: 0.875rem;   /* 14px  eyebrows, labels (min size) */
+  --cb-text-sm: 1rem;       /* 16px  captions */
+  --cb-text-md: 1.1875rem;  /* 19px  body */
+  --cb-text-lg: 1.375rem;   /* 22px  ledes */
+  --cb-text-xl: 1.875rem;   /* 30px  h3 */
+  --cb-text-2xl: clamp(2.25rem, 1.6rem + 2.4vw, 3.5rem);  /* h2 36-56 */
+  --cb-text-3xl: clamp(2.125rem, 1.2rem + 3.4vw, 4.375rem); /* h1 34-70 */
+  --cb-leading-tight: 1.08;
+  --cb-leading-body: 1.7;
+  --cb-tracking-label: 0.16em;
+  --cb-tracking-body: 0.005em;
+
+  /* Spacing (4px base) */
+  --cb-space-1: 4px;  --cb-space-2: 8px;  --cb-space-3: 12px; --cb-space-4: 16px;
+  --cb-space-5: 24px; --cb-space-6: 32px; --cb-space-7: 48px; --cb-space-8: 64px;
+  --cb-space-9: 104px; --cb-space-10: 136px;
+  --cb-max: 1180px;
+
+  /* Radii */
+  --cb-radius-sm: 6px; --cb-radius-md: 10px; --cb-radius-lg: 16px; --cb-radius-xl: 22px;
+
+  /* Depth: neutral shadows only */
+  --cb-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+
+  /* Motion */
+  --cb-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --cb-dur-fast: 160ms;
+  --cb-dur: 280ms;
+}
+
+/* v0.4 additions for the Hallmark pass: every colour on the page goes through a token */
+:root {
+  --cb-nav-h: 76px;
+  --cb-nav-bg: var(--cb-midnight);
+  --cb-surface-card: #07152B;      /* card face */
+  --cb-surface-recess: #030B1A;    /* inputs and the form sample */
+  --cb-surface-raised: #0B1C35;    /* hover lift */
+  --cb-gold-hover: #FFD462;        /* light gold for hover and focus */
+  --cb-ink-on-dark: var(--cb-warm-white);
+  --cb-placeholder: #AAB3C5;
+  --cb-wordmark: #FFFFFF;          /* owner rule: "Custody" and ".com" stay white */
+  --cb-focus: var(--cb-gold-hover);
+  --cb-scrim-desktop:
+    linear-gradient(90deg, rgb(2 7 22 / .92) 0%, rgb(2 7 22 / .8) 30%, rgb(2 7 22 / .36) 50%, rgb(2 7 22 / 0) 64%),
+    linear-gradient(0deg, rgb(2 7 22 / .85) 0%, rgb(2 7 22 / 0) 22%);
+  --cb-scrim-phone: linear-gradient(180deg, rgb(2 7 22 / .97) 0%, rgb(2 7 22 / .82) 34%, rgb(2 7 22 / .12) 58%, rgb(2 7 22 / .35) 100%);
+  --cb-chip-bg: rgb(2 7 22 / .78);
+  --cb-section-gap: 144px;
+  --cb-control-h: 52px;
+}
+@media (max-width: 60rem) { :root { --cb-section-gap: 104px; } }
+@media (max-width: 40rem) { :root { --cb-section-gap: 80px; --cb-nav-h: 64px; } }

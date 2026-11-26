@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CustodyBuddy | Co-parenting clarity, when details matter</title>
+<meta name="description" content="Turn stressful co-parenting moments into clear, factual records with guided tools for documentation, communication, and family-law research.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#020716">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="preload" as="image" href="assets/desk/desk-first.webp">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+/* Hallmark · shape: kept · genre: editorial · theme: brand · redesign: full
+ * paper: oklch(12% 0.03 265) · accent: oklch(82% 0.17 82) · display: Newsreader · body: Inter · hero: kept (scroll-driven desk stage) · nav: wordmark, two links, one action · footer: wordmark over links and the disclaimer · signature: the desk camera push-in and the envelope and tablet turning, driven by scroll
+ * axes: midnight/serif/gold · posture: stage · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V3 · weakest: V, the section run below the hero is the familiar statement, three cards, start band; gave the statement real scale and took the start band out of its box so it reads as the page's end, not another card */
+/* Hallmark · waive 38iii · the hero h1 second line "We'll Bring Clarity." set gold and italic, once, in the hero only · the CustodyBuddy brand guide names gold italic heading words as its signature, so the hero keeps it and every other head is roman */
+/* Hallmark · dismissed 3 · the three columns are photographed tool cards with their own copy and actions, not icon tiles · each card is one of the three CustodyBuddy tools */
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--cb-nav-h) + var(--cb-space-5))}
+body{margin:0;background:var(--cb-bg);background-size:auto,auto,var(--cb-grid-size) var(--cb-grid-size),var(--cb-grid-size) var(--cb-grid-size),auto;background-attachment:fixed;letter-spacing:var(--cb-tracking-body);color:var(--cb-ink-on-dark);font-family:var(--cb-font-body);font-size:var(--cb-text-md);line-height:var(--cb-leading-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:1px}
+p{margin:0;text-wrap:pretty}
+:focus-visible{outline:2px solid var(--cb-focus);outline-offset:3px;border-radius:var(--cb-radius-sm)}
+.wrap{max-width:var(--cb-max);margin-inline:auto;padding-inline:var(--cb-space-6)}
+.skip{position:absolute;left:var(--cb-space-3);top:var(--cb-space-2);z-index:20;background:var(--cb-surface-card);color:var(--cb-ink-on-dark);border:var(--cb-hairline);padding:var(--cb-space-2) var(--cb-space-4);border-radius:var(--cb-radius-md);transform:translateY(-200%)}
+.skip:focus-visible{transform:none}
+h1,h2,h3{font-family:var(--cb-font-display);font-weight:500;line-height:var(--cb-leading-tight);letter-spacing:-0.015em;margin:0;color:var(--cb-warm-white);font-synthesis:none;overflow-wrap:break-word;min-width:0;text-wrap:balance}
+
+/* Wordmark */
+.logo{font-family:var(--cb-font-display);font-weight:500;font-size:1.625rem;text-decoration:none;white-space:nowrap}
+.logo .c,.logo .d{color:var(--cb-wordmark)} .logo .b{color:var(--cb-gold)}
+
+/* Nav: solid, one action */
+.nav{position:sticky;top:0;z-index:30;height:var(--cb-nav-h);background:var(--cb-nav-bg);border-bottom:var(--cb-hairline-soft)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:100%;gap:var(--cb-space-4)}
+.nav ul{display:flex;gap:var(--cb-space-6);list-style:none;margin:0;padding:0;align-items:center}
+.nav ul a:not(.btn){text-decoration:none;color:var(--cb-soft-grey);font-size:var(--cb-text-sm);font-weight:500}
+.nav ul a:not(.btn):hover{color:var(--cb-gold)}
+
+/* Buttons: one primary style, eight states */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--cb-space-2);min-height:var(--cb-control-h);padding:0 var(--cb-space-5);border-radius:var(--cb-radius-md);font:600 1.0625rem/1.2 var(--cb-font-body);text-decoration:none;white-space:nowrap;border:var(--cb-hairline);cursor:pointer;transition:background-color var(--cb-dur-fast) var(--cb-ease),color var(--cb-dur-fast) var(--cb-ease),border-color var(--cb-dur-fast) var(--cb-ease),transform var(--cb-dur-fast) var(--cb-ease)}
+.btn-primary{background:var(--cb-gold);color:var(--cb-on-gold);border-color:var(--cb-gold)}
+.btn-primary:hover{background:var(--cb-gold-hover);border-color:var(--cb-gold-hover)}
+.btn-ghost{background:transparent;color:var(--cb-ink-on-dark);border-color:var(--cb-border-soft)}
+.btn-ghost:hover{background:var(--cb-surface-raised);border-color:var(--cb-gold);color:var(--cb-gold)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled,.btn[aria-disabled="true"]{opacity:.5;cursor:not-allowed;transform:none}
+.btn-sm{min-height:44px;padding:0 var(--cb-space-4);font-size:1rem}
+
+/* Hero: scroll is the timeline. The stage pins under the nav. */
+.scrolly{position:relative;height:280svh}
+.stage{position:sticky;top:var(--cb-nav-h);height:calc(100svh - var(--cb-nav-h));min-height:560px;overflow:hidden;background:var(--cb-midnight)}
+html:not(.js) .stage{background:var(--cb-midnight) url("assets/desk/desk-first.webp") 62% 50%/cover no-repeat}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .scrim{position:absolute;inset:0;pointer-events:none;background:var(--cb-scrim-desktop)}
+.stage-inner{position:relative;z-index:3;height:100%;max-width:var(--cb-max);margin-inline:auto;padding:0 var(--cb-space-6);display:flex;align-items:center}
+.hero-copy{max-width:600px}
+.hero-copy h1{font-size:clamp(2.75rem,1.7rem + 2.3vw,4.25rem);max-width:15ch}
+.hero-copy h1 .then{display:block;margin-top:var(--cb-space-3);font-size:.82em;font-style:italic;color:var(--cb-gold)}
+.lede{font-size:var(--cb-text-lg);line-height:1.5;color:var(--cb-soft-grey);max-width:34ch;margin:var(--cb-space-5) 0 var(--cb-space-6)}
+.actions{display:flex;flex-wrap:wrap;gap:var(--cb-space-3);align-items:center}
+.reassure{display:flex;flex-wrap:wrap;gap:var(--cb-space-2) var(--cb-space-5);margin:var(--cb-space-5) 0 0;padding:0;list-style:none;font-size:var(--cb-text-sm);color:var(--cb-soft-grey)}
+.reassure li{display:flex;align-items:center;gap:var(--cb-space-2)}
+.tick{width:16px;height:16px;flex:none;color:var(--cb-gold)}
+.scroll-cue{font-size:var(--cb-text-xs);color:var(--cb-soft-grey);margin-top:var(--cb-space-7);display:flex;align-items:center;gap:var(--cb-space-3)}
+.scroll-cue::before{content:"";width:1px;height:32px;background:var(--cb-border)}
+.arrive{position:absolute;z-index:4;inset:0;display:flex;align-items:center;opacity:0;pointer-events:none}
+.arrive .wrap{width:100%}
+.arrive.on .arrive-panel{pointer-events:auto}
+.arrive-panel{max-width:440px}
+.arrive-panel h2{font-size:var(--cb-text-xl);margin-bottom:var(--cb-space-4)}
+.arrive-list{list-style:none;margin:0 0 var(--cb-space-6);padding:0;border-top:var(--cb-hairline-soft)}
+.arrive-list li{display:flex;align-items:center;gap:var(--cb-space-3);font-family:var(--cb-font-display);font-size:1.625rem;line-height:1.25;color:var(--cb-warm-white);padding:var(--cb-space-4) 0;border-bottom:var(--cb-hairline-soft)}
+.hint{position:absolute;right:var(--cb-space-6);bottom:var(--cb-space-6);font-size:var(--cb-text-xs);color:var(--cb-soft-grey);border:var(--cb-hairline-soft);border-radius:999px;padding:var(--cb-space-1) var(--cb-space-4);background:var(--cb-chip-bg)}
+.motion-toggle{position:absolute;z-index:5;right:var(--cb-space-6);top:var(--cb-space-5);background:var(--cb-chip-bg)}
+
+@media (max-width:60rem){
+  .scrolly{height:260svh}
+  .stage{min-height:0}
+  .stage .scrim{background:var(--cb-scrim-phone)}
+  .stage-inner{padding:var(--cb-space-6) var(--cb-space-5) 0;align-items:flex-start}
+  .hero-copy h1{font-size:clamp(2rem,1.4rem + 2.6vw,2.75rem)}
+  .lede{font-size:1.0625rem;margin:var(--cb-space-4) 0 var(--cb-space-5)}
+  .actions{flex-direction:column;align-items:stretch;width:100%}
+  .actions .btn{width:100%}
+  .reassure{margin-top:var(--cb-space-4)}
+  .scroll-cue{display:none}
+  .arrive{align-items:flex-start;padding-top:var(--cb-space-6)}
+  .arrive-list li{font-size:1.375rem}
+  .hint{right:var(--cb-space-5);bottom:auto;top:calc(100% - 128px)}
+  .motion-toggle{top:auto;bottom:var(--cb-space-5);right:var(--cb-space-4)}
+}
+@media (prefers-reduced-motion: reduce){
+  html:not(.motion-ok) .scrolly{height:auto}
+  html:not(.motion-ok) .stage{position:relative;top:0}
+  html:not(.motion-ok) .scroll-cue,html:not(.motion-ok) .arrive{display:none!important}
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--cb-ease),transform .8s var(--cb-ease)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* Sections */
+section.block{padding-block:var(--cb-section-gap) 0}
+.head{max-width:720px;margin-bottom:var(--cb-space-7)}
+.head h2{font-size:var(--cb-text-2xl)}
+.head p{color:var(--cb-soft-grey);font-size:var(--cb-text-lg);line-height:1.5;margin-top:var(--cb-space-4);max-width:52ch}
+
+/* Statement: the promise set at scale, three plain facts under a rule */
+.statement h2{font-size:clamp(2.25rem,1.4rem + 3vw,4rem);max-width:20ch;font-weight:400}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--cb-space-6);list-style:none;margin:var(--cb-space-8) 0 0;padding:0}
+.facts li{border-top:var(--cb-hairline);padding-top:var(--cb-space-5);color:var(--cb-soft-grey);font-size:var(--cb-text-lg)}
+.facts strong{display:block;font-family:var(--cb-font-display);font-weight:500;font-size:var(--cb-text-2xl);color:var(--cb-gold);line-height:1.2;margin-bottom:var(--cb-space-1)}
+
+/* Tools */
+.tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--cb-space-6)}
+.card{border:var(--cb-hairline-soft);border-radius:var(--cb-radius-lg);background:var(--cb-surface-card);color:var(--cb-ink-on-dark);overflow:hidden;display:flex;flex-direction:column}
+.card img{aspect-ratio:3/2;object-fit:cover;width:100%;border-bottom:var(--cb-hairline-soft)}
+.card .body{padding:var(--cb-space-5) var(--cb-space-5) var(--cb-space-6);display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.75rem;line-height:1.15}
+.job{font-size:var(--cb-text-sm);color:var(--cb-gold);margin-top:var(--cb-space-2)}
+.card p.desc{color:var(--cb-soft-grey);margin:var(--cb-space-4) 0}
+.checks{list-style:none;padding:0;margin:0 0 var(--cb-space-5)}
+.checks li{display:flex;align-items:center;gap:var(--cb-space-3);padding:var(--cb-space-2) 0;border-bottom:var(--cb-hairline-soft);font-size:var(--cb-text-sm)}
+.checks li:first-child{border-top:var(--cb-hairline-soft)}
+.dest{font-size:var(--cb-text-sm);color:var(--cb-soft-grey);margin-bottom:var(--cb-space-3)}
+.card .btn{margin-top:auto;width:100%}
+
+/* Start: the page ends on the action, no box */
+.start{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:var(--cb-space-6);align-items:center;border-top:var(--cb-hairline-soft);padding-top:var(--cb-space-8)}
+.start h2{font-size:var(--cb-text-2xl);max-width:16ch}
+.start p.say{color:var(--cb-soft-grey);font-size:var(--cb-text-lg);line-height:1.5;margin:var(--cb-space-4) 0 var(--cb-space-6);max-width:40ch}
+.start small{display:block;color:var(--cb-soft-grey);font-size:var(--cb-text-sm);margin-top:var(--cb-space-5)}
+.textlink{color:var(--cb-gold);font-weight:600}
+.textlink:hover{color:var(--cb-gold-hover)}
+.form-card{border:var(--cb-hairline-soft);border-radius:var(--cb-radius-lg);padding:var(--cb-space-6);background:var(--cb-surface-recess);color:var(--cb-ink-on-dark)}
+.field{display:flex;flex-direction:column;gap:var(--cb-space-2);margin-bottom:var(--cb-space-4)}
+.field label{font-weight:600;font-size:var(--cb-text-sm)}
+.field input{min-height:var(--cb-control-h);border:var(--cb-hairline);border-radius:var(--cb-radius-md);background:var(--cb-surface-card);color:var(--cb-ink-on-dark);padding:0 var(--cb-space-4);font:inherit;transition:border-color var(--cb-dur-fast) var(--cb-ease)}
+.field input::placeholder{color:var(--cb-placeholder)}
+.field input:hover{border-color:var(--cb-gold)}
+.field input:focus-visible{outline:2px solid var(--cb-focus);outline-offset:2px}
+.field input:disabled{opacity:.5;cursor:not-allowed}
+.form-card .note{font-size:var(--cb-text-sm);color:var(--cb-soft-grey);margin-top:var(--cb-space-3)}
+
+/* Footer */
+footer{margin-top:var(--cb-section-gap);border-top:var(--cb-hairline-soft);padding:var(--cb-space-8) 0 var(--cb-space-7);background:var(--cb-midnight);color:var(--cb-ink-on-dark)}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--cb-space-5);align-items:start}
+footer p{margin:var(--cb-space-2) 0 0;color:var(--cb-soft-grey);font-size:var(--cb-text-sm)}
+footer nav{display:flex;gap:var(--cb-space-5);flex-wrap:wrap;font-size:var(--cb-text-sm)}
+.disclaimer{grid-column:1/-1;border-top:var(--cb-hairline-soft);padding-top:var(--cb-space-4)}
+
+@media (max-width:60rem){
+  .tools,.facts{grid-template-columns:minmax(0,1fr)}
+  .start{grid-template-columns:minmax(0,1fr);gap:var(--cb-space-6)}
+  .wrap{padding-inline:var(--cb-space-5)}
+}
+@media (max-width:40rem){
+  .nav ul .hide-sm{display:none}
+  .logo{font-size:1.25rem}
+  .btn{padding:0 var(--cb-space-4);font-size:1rem}
+  .actions .btn{width:100%}
+  footer .wrap{grid-template-columns:minmax(0,1fr)}
+  .wrap,.stage-inner{padding-inline:var(--cb-space-4)}
+}
+@media (max-width:22rem){ .logo{font-size:1.125rem} .nav .btn-sm{padding:0 var(--cb-space-3);font-size:.9375rem} }
+</style>
+</head>
+<body>
+<a class="skip" href="#tools">Skip to tools</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tick" viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="CustodyBuddy.com home"><span class="c">Custody</span><span class="b">Buddy</span><span class="d">.com</span></a>
+    <nav aria-label="Primary"><ul>
+      <li class="hide-sm"><a href="#tools">Tools</a></li>
+      <li class="hide-sm"><a href="#">Blog</a></li>
+      <li><a class="btn btn-primary btn-sm" href="#">Start a report</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="scrolly" id="hero" aria-labelledby="hero-title">
+  <div class="stage">
+    <canvas id="deskCanvas" aria-hidden="true"></canvas>
+    <div class="scrim"></div>
+    <div class="stage-inner">
+      <div class="hero-copy" id="heroCopy">
+        <h1 id="hero-title">Don’t Cut Yourself Trying To Pick Up All The Pieces. <span class="then">We’ll Bring Clarity.</span></h1>
+        <p class="lede">Turn a stressful moment into an organized, factual record, without carrying every detail in your head or wondering where to begin.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Start Your First Clear Record</a>
+          <a class="btn btn-ghost" href="#tools">Explore The Three Tools</a>
+        </div>
+        <ul class="reassure">
+          <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>No legal language required</li>
+          <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Review before you share</li>
+        </ul>
+        <p class="scroll-cue" aria-hidden="true">Scroll to explore</p>
+      </div>
+    </div>
+    <div class="arrive" id="arrive">
+      <div class="wrap">
+        <div class="arrive-panel">
+          <h2>Your co&#8209;parenting workspace</h2>
+          <ul class="arrive-list">
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Document what happened</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Understand the legal documents</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Keep communication composed</li>
+          </ul>
+          <a class="btn btn-primary" href="#">Start Your First Clear Record</a>
+        </div>
+      </div>
+      <span class="hint" aria-hidden="true">Keep scrolling to turn</span>
+    </div>
+    <button class="btn btn-ghost btn-sm motion-toggle" type="button" id="motionBtn" aria-pressed="false">Pause motion</button>
+  </div>
+</section>
+
+<section class="block statement reveal" aria-labelledby="values-title">
+  <div class="wrap">
+    <h2 id="values-title">Structure for the moments that feel impossible to organize.</h2>
+    <ul class="facts" aria-label="CustodyBuddy values">
+      <li><strong>3</strong>focused tools</li>
+      <li><strong>You</strong>review every record</li>
+      <li><strong>Clear</strong>educational boundaries</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="tools" aria-labelledby="tools-title">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2 id="tools-title">Three Tools. One Clearer Path Forward.</h2>
+      <p>Built to help you document, understand, and respond, without adding more noise to an already difficult situation.</p>
+    </div>
+    <div class="tools">
+      <article class="card reveal">
+        <img src="assets/cards/desk-evidence-folder.jpg" alt="An open navy leather evidence folder with neatly organized cream records on a dark marble desk" loading="lazy" width="1200" height="800">
+        <div class="body">
+          <h3>Report An Incident: Catch The Facts.</h3>
+          <p class="job">Document what happened</p>
+          <p class="desc">Turn a difficult moment into a calm, factual report while the details are still fresh.</p>
+          <ul class="checks">
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Guided fact capture</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Voice-friendly intake</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Clear, reviewable summary</li>
+          </ul>
+          <a class="btn btn-primary" href="#">Start Your Report</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="assets/cards/desk-document-magnifier.jpg" alt="A cream legal document with a gold seal under a brass magnifying glass on a dark marble desk" loading="lazy" width="1200" height="800">
+        <div class="body">
+          <h3>Family Law Case Analysis: Level The Playing Field.</h3>
+          <p class="job">Understand the legal documents</p>
+          <p class="desc">Get a plain-language explanation of family-law documents and practical questions to discuss with your lawyer.</p>
+          <ul class="checks">
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Plain-English explanations</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Key clauses surfaced</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Questions for your lawyer</li>
+          </ul>
+          <p class="dest">Opens in ChatGPT in a new tab</p>
+          <a class="btn btn-ghost" href="#">Open Case Analysis</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="assets/cards/desk-message-envelope.jpg" alt="A cream envelope with a gold wax seal beside a phone showing calm messages on a dark marble desk" loading="lazy" width="1200" height="800">
+        <div class="body">
+          <h3>Email Law Buddy: Reply With Clarity.</h3>
+          <p class="job">Keep communication composed</p>
+          <p class="desc">Sort through stressful messages, find the practical issue, and draft a calm response that stays on track.</p>
+          <ul class="checks">
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Plain-language summary</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Requests and deadlines</li>
+            <li><svg class="tick" aria-hidden="true"><use href="#tick"/></svg>Calm reply drafts</li>
+          </ul>
+          <p class="dest">Opens in ChatGPT in a new tab</p>
+          <a class="btn btn-ghost" href="#">Open Email Law Buddy</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="start" aria-labelledby="start-title">
+  <div class="wrap">
+    <div class="start reveal">
+      <div>
+        <h2 id="start-title">You Don’t Have To Organize The Whole Story Today.</h2>
+        <p class="say">Start with one moment. We’ll help you turn it into a record you can understand and use.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Start An Incident Report</a>
+          <a class="textlink" href="mailto:hello@custodybuddy.com?subject=Question%20about%20CustodyBuddy">Ask A Question</a>
+        </div>
+        <small>Educational and organizational support. Review everything before you share it.</small>
+      </div>
+      <!-- Form spec sample (design system demo of input + button styling); copy is from the prototype onboarding screen -->
+      <form class="form-card" onsubmit="return false" aria-label="Private workspace sample">
+        <div class="field"><label for="fn">Your first name</label><input id="fn" placeholder="Danielle" autocomplete="given-name"></div>
+        <button class="btn btn-primary" style="width:100%" type="submit">Continue Privately</button>
+        <p class="note">Your profile and reports stay in this browser on this device.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top" aria-label="CustodyBuddy.com home"><span class="c">Custody</span><span class="b">Buddy</span><span class="d">.com</span></a>
+      <p>Clarity for the moments that matter.</p>
+      <p>© 2026 CustodyBuddy</p>
+    </div>
+    <nav aria-label="Footer"><a href="#">Blog</a><a href="mailto:hello@custodybuddy.com">hello@custodybuddy.com</a></nav>
+    <p class="disclaimer">Educational and research purposes only. Not legal, medical, safety, or emergency advice.</p>
+  </div>
+</footer>
+
+<script>
+/* Scroll-driven hero (vanilla JS, desktop and phone)
+   The stage pins under the nav; scroll position through the hero is the timeline.
+   0 to 78%: 100 frames push the camera in on the desk. 78% to 100%: the envelope and tablet turn (clean frames 0 to 17).
+   Nothing plays on its own. Pause motion freezes the picture. Reduce Motion: opens still until Play motion is pressed.
+   Frames load lazily and drawing stops while the hero is off screen. */
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const mobile = matchMedia('(max-width: 60rem)').matches;
+  const pad = n => String(n).padStart(3, '0');
+  const SCRUB_N = 100, ARR = 0.78;
+  const ARC = [...Array(26)].map((_, i) => 34 + i).concat([...Array(18)].map((_, i) => i));
+  const TURN_N = ARC.length, FRONT = ARC.indexOf(0), END = ARC.indexOf(17);
+  const frontOrder = [...Array(TURN_N).keys()].sort((a, b) => Math.abs(a - FRONT) - Math.abs(b - FRONT));
+  const clamp = (v, a, b) => Math.min(Math.max(v, a), b);
+  const smooth = (a, b, v) => { const t = clamp((v - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+  const nearest = (arr, i) => { if (arr[i]) return arr[i]; for (let d = 1; d < arr.length; d++) { if (arr[i - d]) return arr[i - d]; if (arr[i + d]) return arr[i + d]; } return null; };
+
+  const hero = document.getElementById('hero'), stage = hero.querySelector('.stage');
+  const cv = document.getElementById('deskCanvas'), ctx = cv.getContext('2d');
+  const copy = document.getElementById('heroCopy'), arrive = document.getElementById('arrive');
+  const btn = document.getElementById('motionBtn');
+  const posterImg = new Image(); let posterReady = false;
+
+  let enabled = !reduce, paused = false, started = false, inView = true, raf = 0, lastImg = null;
+  const kick = () => { if (!raf) raf = requestAnimationFrame(tick); };
+
+  function loader(urls, onEach, order) {
+    const imgs = new Array(urls.length); let next = 0, inflight = 0;
+    const pump = () => { while (inflight < 6 && next < urls.length) { const i = order ? order[next++] : next++; inflight++;
+      const im = new Image(); im.decoding = 'async';
+      im.onload = im.onerror = () => { inflight--; imgs[i] = im.naturalWidth ? im : null; onEach && onEach(i); pump(); };
+      im.src = urls[i]; } };
+    return { imgs, start: pump };
+  }
+  const scrub = loader([...Array(SCRUB_N)].map((_, i) => `assets/desk/scrub/s-${pad(i)}.webp`), kick);
+  const turn = loader(ARC.map(n => `assets/desk/turn/t-${pad(n)}.webp`), kick, frontOrder);
+  function startLoading() { if (started) return; started = true; scrub.start(); setTimeout(() => turn.start(), 400); }
+
+  function size() { const d = Math.min(devicePixelRatio || 1, 1.5); cv.width = cv.clientWidth * d; cv.height = cv.clientHeight * d; const keep = lastImg; lastImg = null; if (keep) draw(keep); else if (posterReady) draw(posterImg); kick(); }
+  function draw(img) {
+    if (!img || img === lastImg) return; lastImg = img;
+    const cw = cv.width, ch = cv.height;
+    if (mobile) {
+      const bh = ch * 0.6, s = Math.max(cw / img.width, bh / img.height), w = img.width * s, h = img.height * s;
+      ctx.clearRect(0, 0, cw, ch); ctx.drawImage(img, (cw - w) * 0.62, ch - h, w, h);
+    } else {
+      const s = Math.max(cw / img.width, ch / img.height), w = img.width * s, h = img.height * s;
+      ctx.drawImage(img, (cw - w) * 0.62, (ch - h) / 2, w, h);
+    }
+  }
+  function progress() {
+    const r = hero.getBoundingClientRect(), pin = parseFloat(getComputedStyle(stage).top) || 0;
+    return clamp((pin - r.top) / (r.height - stage.offsetHeight), 0, 1);
+  }
+
+  function tick() {
+    raf = 0;
+    if (!enabled || !inView) return;
+    const p = progress();
+    copy.style.opacity = (1 - smooth(0.40, 0.62, p)).toFixed(3);
+    copy.style.transform = `translateY(${(-40 * smooth(0.40, 0.62, p)).toFixed(1)}px)`;
+    copy.style.visibility = p > 0.63 ? 'hidden' : 'visible';
+    const a = smooth(0.74, 0.86, p);
+    arrive.style.opacity = a.toFixed(3); arrive.classList.toggle('on', a > 0.5); arrive.inert = !(a > 0.5);
+    if (paused) return;
+    if (p < ARR) draw(nearest(scrub.imgs, Math.round(p / ARR * (SCRUB_N - 1))));
+    else { const t = (p - ARR) / (1 - ARR); draw(nearest(turn.imgs, Math.round(FRONT + t * (END - FRONT))) || nearest(scrub.imgs, SCRUB_N - 1)); }
+  }
+
+  function setButton() {
+    btn.textContent = (!enabled || paused) ? 'Play motion' : 'Pause motion';
+    btn.setAttribute('aria-pressed', String(!enabled || paused));
+  }
+  btn.addEventListener('click', () => {
+    if (!enabled) { enabled = true; paused = false; document.documentElement.classList.add('motion-ok'); }
+    else paused = !paused;
+    if (!paused) startLoading();
+    setButton(); size();
+  });
+
+  arrive.inert = true;
+  posterImg.onload = () => { posterReady = true; if (!lastImg) draw(posterImg); kick(); };
+  posterImg.src = 'assets/desk/desk-first.webp';
+  if (enabled) startLoading();
+  setButton(); size();
+  addEventListener('scroll', kick, { passive: true });
+  addEventListener('resize', size);
+  new IntersectionObserver(es => { inView = es[0].isIntersecting; kick(); }).observe(hero);
+  kick();
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
